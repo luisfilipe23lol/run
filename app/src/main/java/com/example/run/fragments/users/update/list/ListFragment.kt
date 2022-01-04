@@ -1,4 +1,4 @@
-package com.example.run.fragments.list
+package com.example.run.fragments.users.update.list
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -48,13 +48,21 @@ class ListFragment : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.delete_menu, menu)
+        inflater.inflate(R.menu.user_login, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.menu_delete){
             deleteAllUsers()
         }
+        if (item.itemId == R.id.user_login) {
+            openlogin()
+        }
         return super.onOptionsItemSelected(item)
+
+    }
+    private  fun openlogin(){
+        findNavController().navigate(R.id.action_listFragment_to_loginFragment)
     }
 
     private fun deleteAllUsers() {

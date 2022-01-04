@@ -18,7 +18,8 @@ interface CorridaDao {
     fun deleteCorrida(corrida: Corrida)  //tirei o suspend daqui
 
 
-    @Query("SELECT * FROM corrida_table ORDER BY id ASC")
+    @Query("SELECT * FROM corrida_table ORDER BY id DESC")
     fun readAllData(): LiveData<List<Corrida>>
+
 }
 

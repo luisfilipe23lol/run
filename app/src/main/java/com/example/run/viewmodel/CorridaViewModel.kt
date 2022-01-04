@@ -20,7 +20,6 @@ class CorridaViewModel(application: Application): AndroidViewModel(application){
         repository = CorridaRepository(corridaDao)
         readAllData = repository.readAllData
 
-
     }
 
     fun addCorrida(corrida: Corrida){

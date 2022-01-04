@@ -1,4 +1,4 @@
-package com.example.run.fragments.add
+package com.example.run.fragments.users.update.add
 
 import android.os.Bundle
 import android.text.Editable
@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.run.R
 import com.example.run.model.User
+import com.example.run.utils.utils.Companion.hideKeyboard
 import com.example.run.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
@@ -30,6 +31,7 @@ class AddFragment : Fragment() {
         mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
 
         view.add_btn.setOnClickListener {
+            hideKeyboard()
             insertDataToDatabase()
         }
 

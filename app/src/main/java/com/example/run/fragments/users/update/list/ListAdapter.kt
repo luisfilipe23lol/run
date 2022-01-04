@@ -1,4 +1,4 @@
-package com.example.run.fragments.list
+package com.example.run.fragments.users.update.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -30,8 +30,13 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         holder.itemView.lastName_txt.text = currentItem.lastName
         holder.itemView.age_txt.text = currentItem.age.toString()
 
-        holder.itemView.rowLayout.setOnClickListener {
+       /*holder.itemView.rowLayout.setOnClickListener {
             val action = ListFragmentDirections.actionListFragmentToUpdateFragment(currentItem)
+            holder.itemView.findNavController().navigate(action)
+        }*/
+
+        holder.itemView.rowLayout.setOnClickListener {
+            val action = ListFragmentDirections.actionListFragmentToListarCorridaFragment(currentItem)
             holder.itemView.findNavController().navigate(action)
         }
     }

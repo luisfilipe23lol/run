@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 import com.example.run.model.Corrida
 import com.example.run.model.User
 
-@Database(entities = [User::class, Corrida::class], version = 2, exportSchema = true, autoMigrations = [AutoMigration (from = 1, to = 2)])
+@Database(entities = [User::class, Corrida::class], version = 3, exportSchema = true, autoMigrations = [AutoMigration (from = 2, to = 3)])
 abstract class UserDatabase: RoomDatabase() {
 
     abstract fun userDao(): UserDao
