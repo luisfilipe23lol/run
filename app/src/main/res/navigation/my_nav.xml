@@ -25,12 +25,15 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.run.fragments.users.update.add.AddFragment"
+        android:name="com.example.run.fragments.Api.Users.add.AddUsersFragmentApi"
         android:label="Add"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_addFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/updateFragment"
@@ -46,6 +49,9 @@
         <action
             android:id="@+id/action_updateFragment_to_listarCorridaFragment"
             app:destination="@id/listarCorridaFragment" />
+        <action
+            android:id="@+id/action_updateFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/addCorridaFragment"
@@ -58,6 +64,9 @@
         <argument
             android:name="currentCorrida"
             app:argType="com.example.run.model.User" />
+        <action
+            android:id="@+id/action_addCorridaFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/listarCorridaFragment"
@@ -73,6 +82,9 @@
         <action
             android:id="@+id/action_listarCorridaFragment_to_updateFragment"
             app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_listarCorridaFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"

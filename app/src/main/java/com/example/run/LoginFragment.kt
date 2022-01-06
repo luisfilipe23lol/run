@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.run.api.dto.UserDto
-import com.example.run.api.request.UsersApi
+import com.example.run.api.request.UserApi
 import com.example.run.api.retrofit.ServiceBuilder
 import com.example.run.utils.utils.Companion.hideKeyboard
 import com.example.run.utils.utils.Companion.somethingWentWrong
@@ -52,7 +52,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun signinRequest(view: View){
-        val request = ServiceBuilder.buildService(UsersApi::class.java)
+        val request = ServiceBuilder.buildService(UserApi::class.java)
         val call = request.signin(et_name.text.toString(), et_password.text.toString())
 
         llProgressBar.bringToFront()

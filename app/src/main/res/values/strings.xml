@@ -8,4 +8,6 @@
     <string name="session_expired">Session expired</string>
     <string name="session_expired_message">Session has been expired. Please sign in.</string>
     <string name="error_something_went_wrong">Ups! Something went wrong. Please try again.</string>
+    <string name="fill_all">Preencha todos os campos</string>
+    <string name="successfull_added">utilizador adicionado com sucesso</string>
 </resources>
