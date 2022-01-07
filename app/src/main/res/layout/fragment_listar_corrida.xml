@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.corrida.list.ListarCorridaFragment">
+    tools:context=".fragments.Api.corrida.list.listCorrida">
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -36,4 +36,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="50dp" />
+
+    <include
+        android:id="@+id/llProgressBar"
+        layout="@layout/progressbar"
+        android:visibility="gone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

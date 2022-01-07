@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.corrida.add.addCorridaFragment">
+    tools:context=".fragments.Api.corrida.add.addCorrida">
 
     <EditText
         android:id="@+id/et_hinicio"
@@ -76,4 +76,9 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_hfim" />
+
+    <include
+        android:id="@+id/llProgressBar"
+        layout="@layout/progressbar"
+        android:visibility="gone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

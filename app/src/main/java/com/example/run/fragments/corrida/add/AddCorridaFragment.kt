@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_add_corrida.view.*
 
 
 class addCorridaFragment : Fragment() {
-    private val args by navArgs<addCorridaFragmentArgs>()
+    /*private val args by navArgs<addCorridaFragmentArgs>()
     private lateinit var mCorridaViewModel: CorridaViewModel
     private var _binding: FragmentAddCorridaBinding? = null
     private val binding get() = _binding!!
@@ -87,5 +87,5 @@ class addCorridaFragment : Fragment() {
     private fun inputCheck(hinicio: String, hfim: String, data: String, km: Int): Boolean{
         return !(TextUtils.isEmpty(hinicio) && TextUtils.isEmpty(hfim) && TextUtils.isEmpty(data) && TextUtils.isEmpty(km.toString()))
     }
-
+*/
 }

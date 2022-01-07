@@ -16,7 +16,7 @@ import com.example.run.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
 
-class UpdateFragment : Fragment() {
+/*class UpdateFragment : Fragment() {
 
     private val args by navArgs<UpdateFragmentArgs>()
 
@@ -82,7 +82,7 @@ class UpdateFragment : Fragment() {
     private fun deleteUser() {
         val builder = AlertDialog.Builder(requireContext())
         builder.setPositiveButton("Yes") { _, _ ->
-            mUserViewModel.deleteUser(args.currentUser)
+           // mUserViewModel.deleteUser(args.currentUser)
             Toast.makeText(
                 requireContext(),
                 "Successfully removed: ${args.currentUser.firstName}",
@@ -94,4 +94,4 @@ class UpdateFragment : Fragment() {
         builder.setMessage("Are you sure you want to delete ${args.currentUser.firstName}?")
         builder.create().show()
     }
-}
+}*/

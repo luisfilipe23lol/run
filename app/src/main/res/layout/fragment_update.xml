@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.users.update.UpdateFragment"
+    tools:context=".fragments.Api.Users.updel.UpDel"
     android:padding="24dp">
 
     <EditText

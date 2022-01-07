@@ -10,4 +10,13 @@
     <string name="error_something_went_wrong">Ups! Something went wrong. Please try again.</string>
     <string name="fill_all">Preencha todos os campos</string>
     <string name="successfull_added">utilizador adicionado com sucesso</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="logout">logout</string>
+    <string name="logout_question">Deseja sair ?</string>
+    <string name="ony_edit_your_reports">Edite apenas os seus utilizadores</string>
+    <string name="successfull_updated">Atualizado com sucesso</string>
+    <string name="successfull_deleted">Apagado com suceso</string>
+    <string name="delete_users">Apagar utilizador</string>
+    <string name="question_delete">Deseja mesmo apagar o utilizador</string>
 </resources>

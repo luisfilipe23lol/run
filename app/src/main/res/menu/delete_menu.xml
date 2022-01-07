@@ -8,4 +8,21 @@
         android:iconTint="@android:color/white"
         app:showAsAction="ifRoom"/>
 
+    <item android:id="@+id/menu_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menu_refresh"
+        android:title="Refresh"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menu_maps"
+        android:title="Maps"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"/>
 </menu>

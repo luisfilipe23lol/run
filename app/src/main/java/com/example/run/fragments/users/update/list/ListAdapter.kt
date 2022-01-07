@@ -36,8 +36,8 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         }*/
 
         holder.itemView.rowLayout.setOnClickListener {
-            val action = ListFragmentDirections.actionListFragmentToListarCorridaFragment(currentItem)
-            holder.itemView.findNavController().navigate(action)
+            //val action = ListFragmentDirections.actionListFragmentToListarCorridaFragment(currentItem)
+           // holder.itemView.findNavController().navigate(action)
         }
     }
 

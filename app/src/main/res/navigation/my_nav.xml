@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.example.run.fragments.users.update.list.ListFragment"
+        android:name="com.example.run.fragments.Api.Users.list.ListUsersFragmentApi"
         android:label="Corrida"
         tools:layout="@layout/fragment_list" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateFragment"
-        android:name="com.example.run.fragments.users.update.UpdateFragment"
+        android:name="com.example.run.fragments.Api.Users.updel.UpDel"
         android:label="Update"
         tools:layout="@layout/fragment_update" >
         <action
@@ -45,7 +45,7 @@
             app:destination="@id/listFragment" />
         <argument
             android:name="currentUser"
-            app:argType="com.example.run.model.User" />
+            app:argType="com.example.run.api.models.Users" />
         <action
             android:id="@+id/action_updateFragment_to_listarCorridaFragment"
             app:destination="@id/listarCorridaFragment" />
@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/addCorridaFragment"
-        android:name="com.example.run.fragments.corrida.add.addCorridaFragment"
+        android:name="com.example.run.fragments.Api.corrida.add.addCorrida"
         android:label="Adicionar Corrida"
         tools:layout="@layout/fragment_add_corrida" >
         <action
@@ -63,14 +63,14 @@
             app:destination="@id/listarCorridaFragment" />
         <argument
             android:name="currentCorrida"
-            app:argType="com.example.run.model.User" />
+            app:argType="com.example.run.api.models.Users" />
         <action
             android:id="@+id/action_addCorridaFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/listarCorridaFragment"
-        android:name="com.example.run.fragments.corrida.list.ListarCorridaFragment"
+        android:name="com.example.run.fragments.Api.corrida.list.listCorrida"
         android:label="Listar Corrida"
         tools:layout="@layout/fragment_listar_corrida" >
         <action
@@ -78,7 +78,7 @@
             app:destination="@id/addCorridaFragment" />
         <argument
             android:name="current_user"
-            app:argType="com.example.run.model.User" />
+            app:argType="com.example.run.api.models.Users" />
         <action
             android:id="@+id/action_listarCorridaFragment_to_updateFragment"
             app:destination="@id/updateFragment" />

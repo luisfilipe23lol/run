@@ -17,7 +17,7 @@ import com.example.run.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_list.view.*
 import kotlinx.android.synthetic.main.fragment_listar_corrida.view.*
 
-class ListarCorridaFragment : Fragment() {
+/*class ListarCorridaFragment : Fragment() {
     private lateinit var mCorridaViewModel: CorridaViewModel
     private val args by navArgs<ListarCorridaFragmentArgs>()
     override fun onCreateView(
@@ -42,8 +42,8 @@ class ListarCorridaFragment : Fragment() {
         })
 
   view.floatingActionButtoncorrida.setOnClickListener {
-            val action = ListarCorridaFragmentDirections.actionListarCorridaFragmentToAddCorridaFragment(args.currentUser)
-            findNavController().navigate(action)
+            //val action = ListarCorridaFragmentDirections.actionListarCorridaFragmentToAddCorridaFragment(args.currentUser)
+            //findNavController().navigate(action)
         }
 
         // Add menu
@@ -70,4 +70,4 @@ class ListarCorridaFragment : Fragment() {
 
 
 
-}
+}*/
